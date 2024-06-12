@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Link = ({ url, content }) => {
+const InstagramLink = ({ url, content, ariaLabel }) => {
   const isExternalLink = url.startsWith('https://') || url.startsWith('http://');
 
   return (
@@ -9,6 +9,7 @@ const Link = ({ url, content }) => {
       href={url} 
       rel={isExternalLink ? "noopener noreferrer" : undefined} 
       target={isExternalLink ? "_blank" : "_self"}
+      aria-label={ariaLabel}
       className="custom-link"
     >
       {content}
@@ -16,9 +17,10 @@ const Link = ({ url, content }) => {
   );
 };
 
-Link.propTypes = {
-  url: PropTypes.string.isRequired,
+InstagramLink.propTypes = {
   content: PropTypes.node.isRequired,
+  ariaLabel: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired, 
 };
 
-export default Link;
+export default InstagramLink;

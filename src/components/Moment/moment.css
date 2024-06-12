@@ -1,0 +1,31 @@
+[id='moment'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    h2 {
+        align-self: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction:row;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+
+    
+
+    
+}

@@ -52,7 +52,7 @@ const Insta = () => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="carousel-slide">
-            <img src={image.url} alt={`Instagram image ${index}`} />
+            <img src={image.url} alt={`Instagram ${index}`} />
           </div>
         ))}
       </Slider>
