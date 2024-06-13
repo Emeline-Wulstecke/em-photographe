@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 import Logo from '../../assets/img/logo.webp';
-import Insta from '../InstagramCarousel/Insta';
+
 
 
 const Footer = () => {
@@ -9,11 +9,8 @@ const Footer = () => {
     return (
         <footer id='footer'>
             <h3>Follow me on Instagram !</h3>
-            <div id='insta'>
-                <Insta />
-            </div>
             <figure>
-                <img src={Logo} alt='logo' />
+                <img src={Logo} alt='logos' />
                 <figcaption>COPYRIGHT © {currentYear} || Tous droits réservés || Photographe couples, grossesse & familles – Lille</figcaption>
             </figure>
         </footer>

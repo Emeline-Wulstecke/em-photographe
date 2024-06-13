@@ -23,8 +23,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/couple" element={<Couple />} />
-        <Route path="/family" element={<Family />} />
-        <Route path="/pregnancy" element={<Pregnancy />} />
+        <Route path="/famille" element={<Family />} />
+        <Route path="/grossesse" element={<Pregnancy />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Scroll />
