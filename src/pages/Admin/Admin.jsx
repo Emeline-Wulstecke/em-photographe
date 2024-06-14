@@ -3,6 +3,7 @@ import './admin.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { logIn } from '../../redux/actions/auth.action';
 import { useNavigate } from 'react-router-dom';
+import Button from '../../components/Button/Button';
 
 const Admin = () => {
   const dispatch = useDispatch();
@@ -60,9 +61,9 @@ const Admin = () => {
             onChange={handlePasswordChange}
             required
           />
-          <button id="submit" type="submit" disabled={isLoading}>
+          <Button id="submit" type="submit" disabled={isLoading}>
             {isLoading ? 'Chargement...' : 'Se connecter'}
-          </button>
+          </Button>
         </form>
         <p className="forgotLogin">Mot de passe oublié</p>
       </section>

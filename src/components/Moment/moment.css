@@ -1,31 +1,75 @@
 [id='moment'] {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     width: 100%;
     box-sizing: border-box;
 
     h2 {
         align-self: center;
+        padding-left: 10px;
+    }
+
+    .line {
+        align-self: center;
+        width: 30%;
+        height: 1px;
+        background-color: black;
+        margin: 20px 0;
     }
 
     div {
         display: flex;
         flex-direction:row;
         gap: 20px;
-        padding: 20px;
-        width: 100%;
+        box-sizing: border-box;
     }
 
-    .about {
+    figure {
+        position: relative;
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        justify-content: center;
         width: 100%;
+        box-sizing: border-box;
+
+        .photo1 {
+            position: relative;
+           z-index: 1;
+           height: 50%;
+        }
+        .photo2 {
+            position: relative;
+            height: 50%;
+            top: 140px;
+            right: 70px;
+           
+        }
+
+        .photo3 {
+            position: relative;
+            top: 50px;
+            height: 60%;
+            padding: 10px;
+        }
     }
 
-    
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 
-    
+        p {
+            padding-top: 30px;
+            text-align: justify;
+        }
+    }
 }
