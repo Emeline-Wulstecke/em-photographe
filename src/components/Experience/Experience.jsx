@@ -11,7 +11,7 @@ const Experience = () => {
     return (
         <section id="experience">
             <h2>Choisissez votre expérience</h2>
-            <img src={Pampas} alt="champs de pampas" />
+            <img src={Pampas} alt="champs de pampas" loading="lazy" />
 
             <section>
                 <Card

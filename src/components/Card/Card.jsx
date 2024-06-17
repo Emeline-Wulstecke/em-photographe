@@ -7,7 +7,7 @@ const Card = (props) => {
     return (
         <Link to={props.to} className="card-link">
             <figure id='card'>
-                <img src={props.image} alt={props.alt} />
+                <img src={props.image} alt={props.alt} loading="lazy"/>
                 <Button>{props.caption}</Button>
             </figure>
         </Link>    

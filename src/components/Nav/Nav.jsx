@@ -21,13 +21,13 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/pregnancy">Grossesse</Link>
+          <Link to="/grossesse">Grossesse</Link>
         </li>
         <li>
           <Link to="/couple">Couple</Link>
         </li>
         <li>
-          <Link to="/family">Famille</Link>
+          <Link to="/famille">Famille</Link>
         </li>
         <li>
           <Link to="#contact">Contact</Link>
@@ -42,7 +42,7 @@ const Nav = () => {
           </Link>
         </li>
       </ul>
-      {!hideBanner && <img src={Banner} alt="Un papa et sa fille dans le désert de Marrakech" />}
+      {!hideBanner && <img src={Banner} alt="Un papa et sa fille dans le désert de Marrakech" loading='lazy' />}
     </nav>
   );
 };

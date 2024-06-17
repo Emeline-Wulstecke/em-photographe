@@ -13,8 +13,8 @@ const Moment = () => {
             <div className='line'></div>
             <div>
                 <figure >
-                    <img src={Grossesse7} alt='femme enceinte' className='photo1'></img>
-                    <img src={Vase} alt='vase avec pampas' className='photo2'></img>
+                    <img src={Grossesse7} alt='femme enceinte' className='photo1' loading='lazy'></img>
+                    <img src={Vase} alt='vase avec pampas' className='photo2'loading='lazy'></img>
                 </figure>
 
                 <article>
@@ -31,7 +31,7 @@ const Moment = () => {
                 </article>
 
                 <figure>
-                    <img src={AboutMe} alt='photographe' className='photo3'></img>
+                    <img src={AboutMe} alt='photographe' className='photo3' loading='lazy'></img>
                 </figure>
             </div>
         </section >
